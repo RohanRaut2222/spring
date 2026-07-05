@@ -1,1 +1,3 @@
 /.metadata/
+# ignore a specific file
+commands.txt
