@@ -1,0 +1,12 @@
+package beans;
+
+import java.util.random.RandomGenerator;
+
+public class PdfGenerator implements ReportCreator{
+
+	@Override
+	public void generateReport() {
+		System.out.println("Generating pdf report");
+	}
+
+}

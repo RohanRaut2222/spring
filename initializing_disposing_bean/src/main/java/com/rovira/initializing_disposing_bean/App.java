@@ -1,0 +1,19 @@
+package com.rovira.initializing_disposing_bean;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import beans.MessageSender;
+
+/**
+ * Hello world!
+ */
+public class App {
+    public static void main(String[] args) throws Exception{
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("config.xml");
+        
+        MessageSender messageSender = applicationContext.getBean(MessageSender.class);
+        messageSender.sendMessage();
+        messageSender.destroy();
+    }
+}

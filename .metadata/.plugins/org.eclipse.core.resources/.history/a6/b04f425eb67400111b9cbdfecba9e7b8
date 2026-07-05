@@ -1,0 +1,10 @@
+package beans;
+
+public class ExcelReport implements ReportCreator{
+	
+	public void generateReport()
+	{
+		System.out.println("Generating excel report");
+	}
+
+}

@@ -1,0 +1,11 @@
+package beans;
+
+public class User
+{
+	private final Order order;
+	
+	public User(Order order)
+	{
+		this.order = order;
+	}
+}

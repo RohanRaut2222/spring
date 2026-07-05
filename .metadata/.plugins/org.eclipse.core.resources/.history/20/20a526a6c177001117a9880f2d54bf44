@@ -1,0 +1,19 @@
+package beans;
+
+public class User
+{
+	private final int userId;
+	private final Order order;
+	
+	public User(Order order, int userId)
+	{
+		this.userId = userId;
+		this.order = order;
+	}
+	
+	public void getUserInfo()
+	{
+		System.out.println("UserId: "+this.userId+", OrderId: "+this.order.getOrderId());
+	}
+}
+

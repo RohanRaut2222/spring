@@ -1,0 +1,17 @@
+package beans;
+
+public class ReportGenerator {
+	
+	ReportCreator reportCreator;
+	
+	public void setReportCreator(ReportCreator reportCreator)
+	{
+		this.reportCreator = reportCreator;
+	}
+	
+	public void getReportCreator()
+	{
+		this.reportCreator.generateReport();
+	}
+
+}

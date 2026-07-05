@@ -1,0 +1,18 @@
+package com.rovira.setterInjection;
+
+public class Department
+{
+	Long departmentId;
+	String departmentName;
+	
+	public void setDepartmentId(Long departmentId)
+	{
+		this.departmentId = departmentId;
+	}
+	
+	public void setDepartmentName(String departmentName)
+	{
+		this.departmentName = departmentName;
+	}
+}
+

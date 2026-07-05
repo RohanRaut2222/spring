@@ -1,0 +1,13 @@
+package beans;
+
+import java.nio.file.attribute.UserDefinedFileAttributeView;
+
+public class Order
+{
+	private final User user;
+	
+	public Order(User user)
+	{
+		this.user = user;
+	}
+}

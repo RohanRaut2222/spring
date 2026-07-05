@@ -1,0 +1,18 @@
+package com.rovira.bean_creation;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import beans.ReportGenerator;
+
+/**
+ * Hello world!
+ */
+public class App {
+    public static void main(String[] args) {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("config.xml");
+        ReportGenerator reportGenerator = (ReportGenerator)applicationContext.getBean(ReportGenerator.class);
+        
+        reportGenerator.getReport();
+    }
+}

@@ -1,0 +1,12 @@
+package beans;
+
+public class MessageSender
+{
+	String serverIp;
+	
+	public MessageSender(String serverIp)
+	{
+		this.serverIp = serverIp;
+		System.out.println("Connecting to server ["+this.serverIp+"]");
+	}
+}

@@ -1,0 +1,32 @@
+package beans;
+
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+public class MessageSender implements InitializingBean, DisposableBean
+{
+	String serverIp;
+	
+	public MessageSender(String serverIp)
+	{
+		this.serverIp = serverIp;
+		System.out.println("Setting the properties");
+	}
+	
+	public void sendMessage()
+	{
+		System.out.println("Message sent");
+	}
+
+	@Override
+	public void destroy() throws Exception {
+		
+		System.out.println("Disconnecting server");
+	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		
+		System.out.println("Connecting to server ["+this.serverIp+"]");
+	}
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+	<bean id="address" class="com.rovira.constructorInjection.Address">
+		<constructor-arg name="city" value="pune"/>
+		<constructor-arg name="pinCode" value="411033"/>
+	</bean>
+	
+	<bean id="employee" class="com.rovira.constructorInjection.Employee">
+		<constructor-arg name="name" value="Rohan"/>
+		<constructor-arg name="address" ref="address"/>
+	</bean>
+</beans>
+
