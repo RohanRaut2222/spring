@@ -27,6 +27,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.rovira.beanAutoWiringByName"/>
 			<item value="com.rovira.circularDependency"/>
 			<item value="com.rovira.initializing_disposing_bean"/>
 			<item value="com.rovira.bean_creation"/>
@@ -38,6 +39,7 @@
 			<item value="com.rovira"/>
 		</list>
 		<list key="artifactId">
+			<item value="beanAutoWiringByName"/>
 			<item value="circularDependency"/>
 			<item value="initializing_disposing_bean"/>
 			<item value="bean_creation"/>
