@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean id="studentRepository" class="com.rovira.repository.StudentRepository" autowire="constructor">
+		
+	</bean>
+	
+	<bean id="studentService" class="com.rovira.service.StudentService" autowire="constructor">
+		
+	</bean>
+	
+	<bean id="studentController" class="com.rovira.controller.StudentController" autowire="constructor">
+		
+	</bean>
+</beans>
+

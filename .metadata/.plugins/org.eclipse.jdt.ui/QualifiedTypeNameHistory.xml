@@ -9,8 +9,8 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.nio.file.attribute.UserDefinedFileAttributeView"/>
     <fullyQualifiedTypeName name="beans.User"/>
+    <fullyQualifiedTypeName name="beans.ReportCreator"/>
     <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
-    <fullyQualifiedTypeName name="beans.ReportCreator"/>
     <fullyQualifiedTypeName name="beans.ReportManager"/>
 </qualifiedTypeNameHistroy>
